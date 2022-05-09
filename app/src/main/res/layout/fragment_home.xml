@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bind="http://schemas.android.com/tools"
+    xmlns:tools="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.ng.demo.ui.fragment.home.HomeFragment.HomeClick" />
+
+        <variable
+            name="vehicle"
+            type="com.ng.demo.viewmodel.request.RequestHomeViewModel" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#EFF2F3"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingEnd="15dp"
+            android:paddingBottom="@dimen/dp_10">
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设备控制"
+                android:textColor="@color/color_303030"
+                android:textSize="16sp"
+                tools:layout_constraintStart_toStartOf="parent"
+                tools:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="车辆编号："
+                android:textColor="#ff666666"
+                android:textSize="13sp"
+                tools:layout_constraintStart_toStartOf="@+id/textView4"
+                tools:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+            <TextView
+                android:id="@+id/tv_vin"
+                android:layout_width="162dp"
+                android:layout_height="18dp"
+                android:gravity="center_vertical"
+                android:hint="请选择车辆"
+                android:textColor="@color/colorBlack666"
+                android:textColorHint="#ffb9b9b9"
+                android:textSize="11sp"
+                tools:layout_constraintBottom_toBottomOf="@+id/textView7"
+                tools:layout_constraintStart_toEndOf="@+id/textView7"
+                tools:layout_constraintTop_toTopOf="@+id/textView7" />
+            <!--android:background="@drawable/bg_rectangle_r2"-->
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/car_odometer(vehicle.vehicleDataBean.odometer)}"
+                android:textColor="@color/colorBlack666"
+                android:textSize="13sp"
+                bind:text="累计里程：128.39km"
+                tools:layout_constraintBottom_toTopOf="@+id/textView5"
+                tools:layout_constraintStart_toStartOf="@+id/textView7"
+                tools:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@{@string/car_speed(vehicle.vehicleDataBean.speed)}"
+                android:textColor="@color/colorBlack666"
+                android:textSize="13sp"
+                bind:text="行驶速度：1.2km\h"
+                tools:layout_constraintBottom_toTopOf="@+id/textView3"
+                tools:layout_constraintEnd_toEndOf="parent"
+                tools:layout_constraintStart_toEndOf="@+id/textView2"
+                tools:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@{@string/car_soc(vehicle.vehicleDataBean.soc,'%')}"
+                android:textColor="@color/colorBlack666"
+                android:textSize="13sp"
+                bind:text="剩余电量：81%"
+                tools:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_constraintStart_toStartOf="@+id/textView2" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/colorBlack666"
+                android:textSize="13sp"
+                bind:text="是否可以继续巡检：是"
+                tools:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_constraintStart_toStartOf="@+id/textView6"
+                tools:layout_constraintTop_toBottomOf="@+id/textView6" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.carLights ==1}"
+                    android:drawableTop="@drawable/selector_head_light"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cHeadLight(view)}"
+                    android:text="前灯"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.carTailLight ==1}"
+                    android:drawableTop="@drawable/selector_back_light"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cBackLight(view)}"
+                    android:text="后灯"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.alarmLamp ==1}"
+                    android:drawableTop="@drawable/selector_alarm_light"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cAlarmLight(view)}"
+                    android:text="警灯"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.strongFlashlightStatus ==1}"
+                    android:drawableTop="@drawable/selector_flood_light"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cFloodlight(view)}"
+                    android:showText="false"
+                    android:text="强光灯"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.vehicleStopStatus ==1}"
+                    android:drawableTop="@drawable/selector_stop"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.stopCar(view)}"
+                    android:showText="false"
+                    android:text="急停"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <!--工作状态 0：作业中  1：返航充电中 2：充电中 3：充电完成 4：返回作业中 5.充电异常-->
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.vehicleStopStatus == 1 || vehicle.vehicleDataBean.vehicleStopStatus == 2 || vehicle.vehicleDataBean.vehicleStopStatus == 3}"
+                    android:drawableTop="@drawable/selector_charge"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cCharge(view)}"
+                    android:text="充电"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.vin!=null &amp;&amp; (vehicle.vehicleDataBean.vehicleStopStatus == 0 || vehicle.vehicleDataBean.vehicleStopStatus == 4)}"
+                    android:drawableTop="@drawable/selector_work"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cWork(view)}"
+                    android:text="作业"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+
+                <Switch
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:checked="@{vehicle.vehicleDataBean.policeWhistle ==1}"
+                    android:drawableTop="@drawable/selector_head_light"
+                    android:drawablePadding="4dp"
+                    android:gravity="center_horizontal"
+                    android:onClick="@{(view)->click.cAlarmWhistle(view)}"
+                    android:text="警笛"
+                    android:textColor="@color/colorBlack666"
+                    android:textSize="12sp"
+                    android:thumb="@null"
+                    android:track="@null"
+                    bind:checked="true"
+                    bind:ignore="UseSwitchCompatOrMaterialXml" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <!--<com.just.agentweb.AgentWebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp" />-->
+
+        <!--<include layout="@layout/include_list" />-->
+        <TextView
+            android:id="@+id/tv_robot_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="90dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/bg_theme_r999"
+            android:gravity="center"
+            android:hint="请选择车辆/车辆不在线"
+            android:padding="10dp"
+            android:text="@{vehicle.vehicleDataBean.getWorkStatusString(vehicle.vehicleDataBean.vehicleStopStatus)}"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white"
+            android:textSize="16sp"
+            bind:text="机器人巡检中" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/black"
+            imageUrl="@{vehicle.url}"
+            android:visibility="gone" />
+    </LinearLayout>
+</layout>

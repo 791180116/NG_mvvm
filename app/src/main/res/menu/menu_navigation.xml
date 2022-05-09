@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_robot"
+        android:checked="true"
+        android:icon="@drawable/home_home_selector"
+        android:title="首页" />
+
+    <item
+        android:id="@+id/menu_task"
+        android:icon="@drawable/home_task_selector"
+        android:title="调度" />
+
+    <item
+        android:id="@+id/menu_mine"
+        android:icon="@drawable/home_mine_selector"
+        android:title="我的" />
+</menu>

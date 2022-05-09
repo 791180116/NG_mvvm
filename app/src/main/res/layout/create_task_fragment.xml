@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <variable
+            name="click"
+            type="com.ng.demo.ui.fragment.dispatch.CreateTaskFragment.CreateTaskClick" />
+    </data>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".ui.fragment.dispatch.CreateTaskFragment">
+
+        <include layout="@layout/include_toolbar" />
+
+        <com.crazy.widget.layout.SettingBar
+            android:id="@+id/sb_select_car"
+            style="@style/SceneSelectText"
+            android:layout_marginStart="24dp"
+            android:onClick="@{()->click.selectCar()}"
+            app:bar_leftHint="请选择执行车辆"
+            app:bar_leftPadding="0dp"
+            app:bar_leftPaddingStart="15dp"
+            app:bar_leftSize="@dimen/ts_main_scene"
+            app:bar_lineVisible="false"
+            app:bar_rightIcon="@mipmap/icon_arrows_bottom"
+            app:bar_rightPaddingEnd="20dp" />
+
+        <com.crazy.widget.layout.SettingBar
+            android:id="@+id/sb_select_task"
+            style="@style/SceneSelectText"
+            android:layout_marginStart="24dp"
+            android:onClick="@{()->click.selectTask()}"
+            app:bar_leftHint="请选择任务"
+            app:bar_leftPadding="0dp"
+            app:bar_leftPaddingStart="15dp"
+            app:bar_leftSize="@dimen/ts_main_scene"
+            app:bar_lineVisible="false"
+            app:bar_rightIcon="@mipmap/icon_arrows_bottom"
+            app:bar_rightPaddingEnd="20dp" />
+
+        <Switch
+            android:id="@+id/switch_delayed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="@dimen/ls_main_padding"
+            android:checked="false"
+            android:onClick="@{(view)->click.delayedRun(view)}"
+            android:text="延时执行"
+            tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+        <com.crazy.widget.layout.SettingBar
+            android:id="@+id/sb_select_time"
+            style="@style/SceneSelectText"
+            android:layout_marginStart="24dp"
+            android:onClick="@{()->click.selectTime()}"
+            android:visibility="gone"
+            app:bar_leftHint="请选择执行时间"
+            app:bar_leftPadding="0dp"
+            app:bar_leftPaddingStart="15dp"
+            app:bar_leftSize="@dimen/ts_main_scene"
+            app:bar_lineVisible="false"
+            app:bar_rightIcon="@mipmap/icon_arrows_bottom"
+            app:bar_rightPaddingEnd="20dp" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="50dp"
+            android:onClick="@{()-> click.addVehicleTask()}"
+            android:text="添加" />
+    </LinearLayout>
+</layout>

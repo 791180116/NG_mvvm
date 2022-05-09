@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认分割线大小 -->
+    <dimen name="line_size">1px</dimen>
+
+    <!-- 默认按钮的圆角大小 -->
+    <dimen name="button_round_size">999dp</dimen>
+
+    <!-- 通用对话框圆角大小 -->
+    <dimen name="dialog_ui_round_size">15dp</dimen>
+
+
+    <!--👇👇👇👇👇Aimo layout size定义👇👇👇👇👇-->
+    <!--主圆角-->
+    <dimen name="ls_radius">6dp</dimen>
+    <!--主外边距-->
+    <dimen name="ls_main_margin">14dp</dimen>
+    <!--主间距-->
+    <dimen name="ls_main_padding">16dp</dimen>
+    <!--输入框高度-->
+    <dimen name="ls_input_high">34dp</dimen>
+    <!--按钮高度-->
+    <dimen name="ls_main_button_high">26dp</dimen>
+    <!--👆👆👆👆👆Aimo layout size定义👆👆👆👆👆-->
+
+    <!--👇👇👇👇👇Aimo text size定义👇👇👇👇👇-->
+    <!--主字号-->
+    <dimen name="ts_main">14sp</dimen>
+    <dimen name="ts_main_scene">13sp</dimen>
+    <!--标题字号-->
+    <dimen name="ts_title">18sp</dimen>
+    <!--👆👆👆👆👆Aimo text size定义👆👆👆👆👆-->
+</resources>

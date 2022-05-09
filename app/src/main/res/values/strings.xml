@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">NG_Mvvm_demo</string>
+
+    <string name="error_occurred">不好意思App翻车了。\n请拿已复制好的错误日志去啪啪啪得打作者的脸</string>
+
+    <string name="car_speed">行驶速度：%skm/h</string>
+    <string name="car_soc">剩余电量：%s%s</string>
+    <string name="car_odometer">累计里程：%skm</string>
+
+    <string name="select">选择</string>
+    <string name="cancel">取消</string>
+</resources>

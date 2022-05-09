@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="colorPrimary">#2196F3</color>
+    <color name="colorPrimaryDark">#2196F3</color>
+    <color name="colorAccent">#2196F3</color>
+    <color name="textHint">#999999</color>
+    <color name="colorGray">#333</color>
+    <color name="colorBlack666">#666</color>
+    <color name="colorBlack333">#333</color>
+    <color name="windowBackground">#F5F5F5</color>
+    <color name="background">#d8d8d8</color>
+    <color name="backgroundeee">#eeeeee</color>
+    <color name="backgrounGrey">#CCCCCC</color>
+    <color name="texttipColor">#a0a0a0</color>
+    <color name="diverColoe">#cecece</color>
+    <color name="accent">#E91E63</color>
+    <color name="chinaHoliDay">#e10015</color>
+
+
+    <!-- 按钮按压时的颜色 -->
+    <color name="common_button_pressed_color">#AA5A8DDF</color>
+    <!-- 按钮禁用时的颜色 -->
+    <color name="common_button_disable_color">#BBBBBB</color>
+    <!--👇👇👇👇👇Aimo 颜色定义👇👇👇👇👇-->
+    <!--主题色   4296f6-->
+    <color name="theme_color">#4296f6</color>
+    <!--主背景色f7f8fc-->
+    <color name="main_bg_color">#f7f8fc</color>
+    <!--边框描边 979797-->
+    <color name="round_color">#979797</color>
+    <!--背景f0f0f0-->
+    <color name="scene_text_bg_color">#f0f0f0</color>
+    <!--普通字体颜色-->
+    <color name="text_normal_color">#3B3D3D</color>
+
+
+    <color name="color_303030">#303030</color>
+    <color name="color_4296f7">#4296F7</color>
+
+
+    <!--👆👆👆👆👆Aimo 颜色定义👆👆👆👆👆-->
+</resources>

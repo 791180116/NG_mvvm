@@ -1,0 +1,2 @@
+include ':app', ':JetpackMvvm', ":widget"
+rootProject.name = 'aimo_dispatch'

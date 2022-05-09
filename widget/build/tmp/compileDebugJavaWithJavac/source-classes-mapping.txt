@@ -1,0 +1,47 @@
+com/crazy/widget/layout/NoScrollViewPager.java
+ com.crazy.widget.layout.NoScrollViewPager
+com/crazy/widget/layout/SettingBar.java
+ com.crazy.widget.layout.SettingBar
+com/crazy/widget/layout/SimpleLayout.java
+ com.crazy.widget.layout.SimpleLayout
+com/crazy/widget/view/SubmitButton.java
+ com.crazy.widget.view.SubmitButton
+ com.crazy.widget.view.SubmitButton$1
+ com.crazy.widget.view.SubmitButton$2
+com/crazy/widget/view/SmartTextView.java
+ com.crazy.widget.view.SmartTextView
+com/crazy/widget/layout/CustomViewStub.java
+ com.crazy.widget.layout.CustomViewStub
+ com.crazy.widget.layout.CustomViewStub$OnViewStubListener
+com/crazy/widget/BuildConfig.java
+ com.crazy.widget.BuildConfig
+com/crazy/widget/view/ClearEditText.java
+ com.crazy.widget.view.ClearEditText
+com/crazy/widget/view/ScaleImageView.java
+ com.crazy.widget.view.ScaleImageView
+com/crazy/widget/view/SlantedTextView.java
+ com.crazy.widget.view.SlantedTextView
+com/crazy/widget/layout/NestedViewPager.java
+ com.crazy.widget.layout.NestedViewPager
+com/crazy/widget/view/PasswordEditText.java
+ com.crazy.widget.view.PasswordEditText
+com/crazy/widget/layout/RatioFrameLayout.java
+ com.crazy.widget.layout.RatioFrameLayout
+com/crazy/widget/layout/NestedScrollWebView.java
+ com.crazy.widget.layout.NestedScrollWebView
+com/crazy/widget/layout/WrapRecyclerView.java
+ com.crazy.widget.layout.WrapRecyclerView
+ com.crazy.widget.layout.WrapRecyclerView$1
+ com.crazy.widget.layout.WrapRecyclerView$WrapAdapterDataObserver
+ com.crazy.widget.layout.WrapRecyclerView$WrapRecyclerAdapter
+ com.crazy.widget.layout.WrapRecyclerView$WrapViewHolder
+com/crazy/widget/view/CountdownView.java
+ com.crazy.widget.view.CountdownView
+com/crazy/widget/view/SwitchButton.java
+ com.crazy.widget.view.SwitchButton
+ com.crazy.widget.view.SwitchButton$1
+ com.crazy.widget.view.SwitchButton$OnCheckedChangeListener
+ com.crazy.widget.view.SwitchButton$SavedState
+ com.crazy.widget.view.SwitchButton$SavedState$1
+com/crazy/widget/view/RegexEditText.java
+ com.crazy.widget.view.RegexEditText
