@@ -2,7 +2,7 @@
 
 [1]:https://img.shields.io/badge/platform-Android-blue.svg  
 [2]:https://github.com/791180116/NG_mvvm
-[3]:https://img.shields.io/github/release/hegaojian/JetpackMvvm.svg
+[3]:https://img.shields.io/badge/release-v1.0.0-blue
 [4]:https://github.com/791180116/NG_mvvm/releases/latest
 [5]:https://img.shields.io/badge/LICENSE-MBL%202.0-blue
 [6]:https://github.com/791180116/NG_mvvm/blob/main/LICENSE
