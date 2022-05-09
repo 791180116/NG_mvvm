@@ -1,13 +1,13 @@
 [![Platform][1]][2] [![GitHub license][3]][4]  [![GitHub license][5]][6] 
 
 [1]:https://img.shields.io/badge/platform-Android-blue.svg  
-[2]:https://github.com/hegaojian/JetpackMvvm
+[2]:https://github.com/791180116/NG_mvvm
 [3]:https://img.shields.io/github/release/hegaojian/JetpackMvvm.svg
-[4]:https://github.com/hegaojian/JetpackMvvm/releases/latest
-[5]:https://img.shields.io/badge/license-Apache%202-blue.svg
-[6]:https://github.com/hegaojian/JetpackMvvm/blob/master/LICENSE
+[4]:https://github.com/791180116/NG_mvvm/releases/latest
+[5]:https://img.shields.io/badge/LICENSE-MBL%202.0-blue
+[6]:https://github.com/791180116/NG_mvvm/blob/main/LICENSE
 
-# :自用mvvm copy by JetPackMvvm
+# 自用mvvm copy by JetPackMvvm
 - **基于MVVM模式集成谷歌官方推荐的JetPack组件库：LiveData、ViewModel、Lifecycle、Navigation组件**
 - **使用kotlin语言，添加大量拓展函数，简化代码**
 - **加入Retrofit网络请求,协程，帮你简化各种操作，让你快速请求网络**  
@@ -435,8 +435,8 @@ private val mainViewModel by lazy { getAppViewModel<MainViewModel>()}
 
 
 ## 感谢
-- [JetPackMvvm][2]
+- [JetPackMvvm](https://github.com/hegaojian/JetpackMvvm)
 - [Jetpack-MVVM-Best-Practice](https://github.com/KunMinX/Jetpack-MVVM-Best-Practice)
 - [重学安卓](https://xiaozhuanlan.com/kunminx?rel=8184827882)
 
-
+## [LICENSE](https://github.com/791180116/NG_mvvm/blob/main/LICENSE)
