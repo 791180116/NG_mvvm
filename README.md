@@ -12,22 +12,6 @@
 - **使用kotlin语言，添加大量拓展函数，简化代码**
 - **加入Retrofit网络请求,协程，帮你简化各种操作，让你快速请求网络**  
 
-## 演示Demo
- 已用该库重构了我之前的玩安卓项目，利用Navigation组件以单Activity+Fragment架构编写，优化了很多代码，对比之前的mvp项目，开发效率与舒适度要提高了不少，想看之前MVP的项目可以去 [https://github.com/hegaojian/WanAndroid](https://github.com/hegaojian/WanAndroid) 
- 
-#### 效果图展示 
-![项目效果图](https://upload-images.jianshu.io/upload_images/9305757-818106225dd01e65.gif?imageMogr2/auto-orient/strip)
- 
-#### APK下载：
-
-- [Github下载](https://github.com/hegaojian/JetpackMvvm/releases/download/1.1.8/app-release.apk)
-
-- [firm下载(推荐)](http://d.6short.com/v9q7)
-
-- 扫码下载(推荐)
-
-![](https://upload-images.jianshu.io/upload_images/9305757-4999111e26d5e93a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-  
   
 ## 1.如何集成
 
@@ -47,7 +31,7 @@ allprojects {
 ``` gradle
 dependencies {
   ...
-  implementation 'ng.crazy:JetpackMvvm:1.2.5'
+  implementation 'ng.crazy:JetpackMvvm:1.0.0'
 }
 ```
 
@@ -451,26 +435,8 @@ private val mainViewModel by lazy { getAppViewModel<MainViewModel>()}
 
 
 ## 感谢
+- [JetPackMvvm][2]
 - [Jetpack-MVVM-Best-Practice](https://github.com/KunMinX/Jetpack-MVVM-Best-Practice)
 - [重学安卓](https://xiaozhuanlan.com/kunminx?rel=8184827882)
 
-## 联系
-- QQ交流群：419581249
-
-## License
-``` license
- Copyright 2019
-  
-   Licensed under the Apache License, Version 2.0 (the "License");
-   you may not use this file except in compliance with the License.
-   You may obtain a copy of the License at 
- 
-       http://www.apache.org/licenses/LICENSE-2.0 
-
-   Unless required by applicable law or agreed to in writing, software
-   distributed under the License is distributed on an "AS IS" BASIS,
-   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-   See the License for the specific language governing permissions and
-   limitations under the License.
-```
 
