@@ -2,7 +2,6 @@ package com.ng.demo.app
 
 import android.view.Gravity
 import androidx.multidex.MultiDex
-import cat.ereza.customactivityoncrash.config.CaocConfig
 import com.blankj.utilcode.util.ToastUtils
 import com.blankj.utilcode.util.Utils
 import com.kingja.loadsir.callback.SuccessCallback
@@ -14,8 +13,6 @@ import com.ng.demo.app.ext.getProcessName
 import com.ng.demo.app.weight.loadCallBack.EmptyCallback
 import com.ng.demo.app.weight.loadCallBack.ErrorCallback
 import com.ng.demo.app.weight.loadCallBack.LoadingCallback
-import com.ng.demo.ui.activity.ErrorActivity
-import com.ng.demo.ui.activity.WelcomeActivity
 import com.tencent.mmkv.MMKV
 import ng.crazy.jetpackmvvm.base.BaseApp
 import ng.crazy.jetpackmvvm.ext.util.jetpackMvvmLog
@@ -74,7 +71,7 @@ class App : BaseApp() {
         ToastUtils.getDefaultMaker().setGravity(Gravity.CENTER, -1, -1)//修改toast位置
 
         //防止项目崩溃，崩溃后打开错误界面
-        CaocConfig.Builder.create()
+        /*CaocConfig.Builder.create()
             .backgroundMode(CaocConfig.BACKGROUND_MODE_SILENT) //default: CaocConfig.BACKGROUND_MODE_SHOW_CUSTOM
             .enabled(true)//是否启用CustomActivityOnCrash崩溃拦截机制 必须启用！不然集成这个库干啥？？？
             .showErrorDetails(false) //是否必须显示包含错误详细信息的按钮 default: true
@@ -84,7 +81,7 @@ class App : BaseApp() {
             .minTimeBetweenCrashesMs(2000) //应用程序崩溃之间必须经过的时间 default: 3000
             .restartActivity(WelcomeActivity::class.java) // 重启的activity
             .errorActivity(ErrorActivity::class.java) //发生错误跳转的activity
-            .apply()
+            .apply()*/
     }
 
     //不重要的异步初始化

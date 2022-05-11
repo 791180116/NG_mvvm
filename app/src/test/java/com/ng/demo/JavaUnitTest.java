@@ -112,5 +112,10 @@ public class JavaUnitTest {
         i插入排序(arr);
         System.out.print(Arrays.toString(arr));
     }
+
+    @Test
+    public void aaa(){
+
+    }
 }
 

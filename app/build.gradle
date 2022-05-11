@@ -9,7 +9,7 @@ android {
     compileSdkVersion 30
     buildToolsVersion "30.0.3"
     defaultConfig {
-        applicationId "com.aimo.dispatch"
+        applicationId "com.ng.demo"
         minSdkVersion 23
         targetSdkVersion 31
         versionCode 1

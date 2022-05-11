@@ -70,15 +70,4 @@ class LoginFragment : BaseFragment<LoginRegisterViewModel, FragmentLoginBinding>
                 mViewModel.isShowPwd.set(isChecked)
             }
     }
-
-    /**
-     *$ git push origin main
-    Logon failed, use ctrl+c to cancel basic credential prompt.
-    Username for 'https://github.com': 791180016@qq.com
-    error: unable to read askpass response from 'C:/Program Files/Git/mingw64/libexec/git-core/git-gui--askpass'
-    Password for 'https://791180016@qq.com@github.com':
-    remote: Support for password authentication was removed on August 13, 2021. Please use a personal access token instead.
-    remote: Please see https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/ for more information.
-    fatal: Authentication failed for 'https://github.com/791180116/NG_mvvm.git/'
-     *  */
 }

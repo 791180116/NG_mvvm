@@ -12,7 +12,9 @@ import com.blankj.utilcode.util.ToastUtils
 import com.ng.demo.R
 import com.ng.demo.app.appViewModel
 import com.ng.demo.app.base.BaseActivity
+import com.ng.demo.app.util.CacheUtil
 import com.ng.demo.app.util.StatusBarUtil
+import com.ng.demo.data.model.bean.UserInfo
 import com.ng.demo.databinding.ActivityMainBinding
 import com.ng.demo.viewmodel.state.MainViewModel
 import ng.crazy.jetpackmvvm.network.manager.NetState
@@ -56,7 +58,27 @@ class MainActivity : BaseActivity<MainViewModel, ActivityMainBinding>() {
             StatusBarUtil.setColor(this, it, 0)
         }
 
+        模拟用户数据()
+
         isLogin()
+    }
+
+
+    /**
+     * 模拟登录成功缓存用户信息
+     */
+    private fun 模拟用户数据() {
+        CacheUtil.setUser(UserInfo().apply {
+            id = "123"
+            name = "123"
+            dept_id = "123"
+            token = "123"
+            permissions = listOf()
+            lon = "123"
+            lat = "123"
+            level = "123"
+        })
+        appViewModel.userInfo.value = CacheUtil.getUser()
     }
 
     private fun isLogin() {

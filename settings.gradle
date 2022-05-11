@@ -1,2 +1,2 @@
 include ':app', ':JetpackMvvm', ":widget"
-rootProject.name = 'aimo_dispatch'
+rootProject.name = 'ng_mvvm_demo'

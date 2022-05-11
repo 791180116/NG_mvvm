@@ -15,6 +15,7 @@ class ExampleUnitTest {
     fun addition_isCorrect() {
         //assertEquals(4, 2 + 2)
     }
+
     @Test
     fun test协程() {
         runBlocking {
@@ -34,6 +35,7 @@ class ExampleUnitTest {
             println("test5")
         }
     }
+
     @Test
     fun forprn() {
         for (i in arrayOf(2, 4, 6, 8)) {
@@ -112,5 +114,29 @@ class ExampleUnitTest {
         val arr: Array<Int> = arrayOf(1, 5, 3, 8, 4, 9, 5, 5, 6, 7, 2, 88, 54, 666, 47)
 
 
+    }
+
+    @Test
+    fun 统计出现次数() {
+        val strs = "ahkjeindaaldoekaddflae"
+        val map = HashMap<String, Int>();
+        for (c in strs.toCharArray()) {
+            if (map[c.toString()] != null) {
+                map[c.toString()] = map[c.toString()]!! + 1
+            } else {
+                map[c.toString()] = 1
+            }
+        }
+        var max = 0
+        var str = ""
+        map.forEach {
+            if (max < it.value) {
+                max = it.value
+                str = it.key
+            }
+            println("key=${it.key};value=${it.value}")
+        }
+
+        println("出现最多的字符为$str,出现了${max}次")
     }
 }
