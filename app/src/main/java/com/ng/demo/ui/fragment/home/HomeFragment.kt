@@ -36,8 +36,6 @@ class HomeFragment : BaseFragment<HomeViewModel, FragmentHomeBinding>() {
         fun newInstance() = HomeFragment()
     }
 
-    override fun layoutId() = R.layout.fragment_home
-
     override fun initView(savedInstanceState: Bundle?) {
         //状态页配置
         /*loadsir = loadServiceInit(swipeRefresh) {

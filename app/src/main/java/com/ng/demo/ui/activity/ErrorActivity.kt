@@ -25,9 +25,6 @@ import ng.crazy.jetpackmvvm.ext.view.clickNoRepeat
  * 描述　:
  */
 class ErrorActivity : BaseActivity<BaseViewModel, ActivityErrorBinding>() {
-
-    override fun layoutId() = R.layout.activity_error
-
     override fun initView(savedInstanceState: Bundle?) {
         toolbar.init("发生错误")
         supportActionBar?.setBackgroundDrawable(ColorDrawable(SettingUtil.getColor(this)))

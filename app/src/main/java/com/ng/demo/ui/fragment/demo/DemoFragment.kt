@@ -34,8 +34,6 @@ class DemoFragment : BaseFragment<DemoViewModel, FragmentDemoBinding>() {
         fun newInstance() = DemoFragment()
     }
 
-    override fun layoutId(): Int = R.layout.fragment_demo
-
     @SuppressLint("SetJavaScriptEnabled")
     override fun initView(savedInstanceState: Bundle?) {
 

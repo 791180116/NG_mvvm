@@ -40,8 +40,6 @@ class WebFragment : BaseFragment<WebViewModel, FragmentWebBinding>() {
 
     private var preWeb: AgentWeb.PreAgentWeb? = null
 
-    override fun layoutId() = R.layout.fragment_web
-
     override fun initView(savedInstanceState: Bundle?) {
         setHasOptionsMenu(true)
         arguments?.run {

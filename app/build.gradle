@@ -34,9 +34,10 @@ android {
 
     /*signingConfigs {
         release {
-            storeFile file("../app/cxk.jks")
+            //storeFile file("../app/cxk.jks")
+            storeFile file("${rootDir.path}/app/cxk.jks")
             storePassword "123456"
-            keyAlias "com.aimo.ai"
+            keyAlias "aimo"
             keyPassword "123456"
         }
     }*/
@@ -59,11 +60,11 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility = 1.8
-        targetCompatibility = 1.8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
     kotlinOptions {
-        jvmTarget = "1.8"
+        jvmTarget = "11"
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -141,6 +142,8 @@ dependencies {
     //项目核心框架
     implementation project(path: ':JetpackMvvm')
     implementation project(path: ':widget')
+    implementation project(path: ':library')
+    //implementation project(path: ':ThirdParty')
 //    implementation 'me.hegj:JetpackMvvm:1.2.0'
     //轮播图
     implementation 'com.github.zhpanvip:BannerViewPager:3.1.5'

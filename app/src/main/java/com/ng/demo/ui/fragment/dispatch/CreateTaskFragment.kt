@@ -30,8 +30,6 @@ class CreateTaskFragment : BaseFragment<RequestCreateTaskViewModel, CreateTaskFr
     private var vin: String = ""
     var createTaskBean: MutableLiveData<CreateTaskBean> = MutableLiveData();
 
-    override fun layoutId(): Int = R.layout.create_task_fragment
-
     override fun initView(savedInstanceState: Bundle?) {
         toolbar.title = "添加任务"
 

@@ -29,7 +29,7 @@
     <color name="common_button_pressed_color">#AA5A8DDF</color>
     <!-- 按钮禁用时的颜色 -->
     <color name="common_button_disable_color">#BBBBBB</color>
-    <!--👇👇👇👇👇Aimo 颜色定义👇👇👇👇👇-->
+    <!--Aimo 颜色定义-->
     <!--主题色   4296f6-->
     <color name="theme_color">#4296f6</color>
     <!--主背景色f7f8fc-->
@@ -46,5 +46,5 @@
     <color name="color_4296f7">#4296F7</color>
 
 
-    <!--👆👆👆👆👆Aimo 颜色定义👆👆👆👆👆-->
+    <!--Aimo 颜色定义-->
 </resources>

@@ -43,7 +43,6 @@ class DispatchFragment : BaseFragment<DispatchViewModel, FragmentDispatchBinding
         fragments.add(CarsFragment())
     }
 
-    override fun layoutId(): Int = R.layout.fragment_dispatch
     lateinit var agentWeb: AgentWeb
 
     companion object {

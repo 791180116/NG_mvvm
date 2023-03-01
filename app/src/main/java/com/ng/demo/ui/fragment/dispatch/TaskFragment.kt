@@ -23,7 +23,6 @@ class TaskFragment : BaseFragment<TaskViewModel, FragmentTaskBinding>() {
     val status = arrayListOf("未开始", "执行", "暂停", "终止", "完成")
     private val taskAdapter: TaskAdapter by lazy { TaskAdapter(arrayListOf()) }
     private val requestTaskViewModel: RequestTaskViewModel by viewModels()
-    override fun layoutId(): Int = R.layout.fragment_task
 
     @SuppressLint("CheckResult")
     override fun initView(savedInstanceState: Bundle?) {

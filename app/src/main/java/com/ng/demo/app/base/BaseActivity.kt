@@ -14,7 +14,7 @@ import ng.crazy.jetpackmvvm.base.viewmodel.BaseViewModel
  */
 abstract class BaseActivity<VM : BaseViewModel, DB : ViewDataBinding> : BaseVmDbActivity<VM, DB>() {
 
-    abstract override fun layoutId(): Int
+    //abstract override fun layoutId(): Int
 
     abstract override fun initView(savedInstanceState: Bundle?)
 

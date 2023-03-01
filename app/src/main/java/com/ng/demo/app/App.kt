@@ -82,6 +82,11 @@ class App : BaseApp() {
             .restartActivity(WelcomeActivity::class.java) // 重启的activity
             .errorActivity(ErrorActivity::class.java) //发生错误跳转的activity
             .apply()*/
+
+        //初始化三方
+        //ThirdUtil.initUM(this,"","")//初始化友盟
+
+
     }
 
     //不重要的异步初始化

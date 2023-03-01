@@ -1,2 +1,3 @@
-include ':app', ':JetpackMvvm', ":widget"
+include ':app', ':JetpackMvvm', ":widget", ':library'
 rootProject.name = 'ng_mvvm_demo'
+//include ':ThirdParty'

@@ -34,7 +34,7 @@ abstract class BaseVmFragment<VM : BaseViewModel> : Fragment() {
     /**
      * 当前Fragment绑定的视图布局
      */
-    abstract fun layoutId(): Int
+    //abstract fun layoutId(): Int
 
 
     override fun onCreateView(
@@ -42,8 +42,10 @@ abstract class BaseVmFragment<VM : BaseViewModel> : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        return inflater.inflate(layoutId(), container, false)
+        return initDataBind(inflater,container)
     }
+
+    abstract fun initDataBind(inflater: LayoutInflater, container: ViewGroup?): View
 
     override fun onAttach(context: Context) {
         super.onAttach(context)

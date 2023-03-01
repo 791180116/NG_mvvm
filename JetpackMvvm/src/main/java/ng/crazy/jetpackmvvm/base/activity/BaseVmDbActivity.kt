@@ -1,9 +1,9 @@
 package ng.crazy.jetpackmvvm.base.activity
 
-import android.os.Bundle
-import androidx.databinding.DataBindingUtil
+import android.view.LayoutInflater
 import androidx.databinding.ViewDataBinding
 import ng.crazy.jetpackmvvm.base.viewmodel.BaseViewModel
+import java.lang.reflect.ParameterizedType
 
 /**
  * 描述　: 包含ViewModel 和Databind ViewModelActivity基类，把ViewModel 和Databind注入进来了
@@ -13,16 +13,27 @@ abstract class BaseVmDbActivity<VM : BaseViewModel, DB : ViewDataBinding> : Base
 
     lateinit var mDatabind: DB
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        userDataBinding(true)
-        super.onCreate(savedInstanceState)
-    }
-
     /**
      * 创建DataBinding
      */
+    @Suppress("UNCHECKED_CAST")
     override fun initDataBind() {
-        mDatabind = DataBindingUtil.setContentView(this, layoutId())
-        mDatabind.lifecycleOwner = this
+        val type = javaClass.genericSuperclass
+        if (type is ParameterizedType) {
+            val clazz1 = type.actualTypeArguments.filterIsInstance<Class<DB>>()
+            val method = clazz1[1].getDeclaredMethod("inflate", LayoutInflater::class.java)
+            //val clazz = type.actualTypeArguments[0] as Class<DB>
+            //val method = clazz.getMethod("inflate", LayoutInflater::class.java)
+            mDatabind = method.invoke(null, layoutInflater) as DB
+            setContentView(mDatabind.root)
+            mDatabind.lifecycleOwner = this
+        } else {
+            throw Exception("View is null,check VB(ViewBinding)")
+        }
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        mDatabind.unbind()
     }
 }

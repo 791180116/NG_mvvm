@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.17097264437689969" />
         <entry key="..\:/Android/demo/JetpackMvvm/app/src/main/res/drawable/button_shap.xml" value="0.23697916666666666" />
         <entry key="..\:/Android/demo/JetpackMvvm/app/src/main/res/drawable/edit_shape.xml" value="0.23697916666666666" />
         <entry key="..\:/Android/demo/JetpackMvvm/app/src/main/res/drawable/keyvisibily_selector.xml" value="0.23697916666666666" />
@@ -133,11 +134,21 @@
         <entry key="..\:/Users/86131/.gradle/caches/transforms-2/files-2.1/100fecb2cab4da92dc87eb9c484bca1d/jetified-core-3.3.0/res/layout/md_listitem.xml" value="0.3536458333333333" />
         <entry key="..\:/workspace/NG_mvvm/app/src/main/res/layout/activity_main.xml" value="0.2341485507246377" />
         <entry key="..\:/workspace/aimo_dispatch/app/src/main/res/layout/fragment_login.xml" value="0.31521739130434784" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/activity_welcome.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/banner_itemwelcome.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/create_task_fragment.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/fragment_cars.xml" value="0.384375" />
+        <entry key="app/src/main/res/layout/fragment_demo.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/fragment_dispatch.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.27447916666666666" />
+        <entry key="app/src/main/res/layout/fragment_login.xml" value="0.5166666666666667" />
+        <entry key="app/src/main/res/layout/layout_loading.xml" value="0.5166666666666667" />
       </map>
     </option>
   </component>
   <component name="ExternalStorageConfigurationManager" enabled="true" />
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

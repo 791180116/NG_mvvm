@@ -16,7 +16,6 @@ class MineFragment : BaseFragment<MineViewModel, FragmentMineBinding>() {
         fun newInstance() = MineFragment()
     }
 
-    override fun layoutId(): Int = R.layout.fragment_mine
 
     override fun initView(savedInstanceState: Bundle?) {
         mDatabind.viewModel = mViewModel

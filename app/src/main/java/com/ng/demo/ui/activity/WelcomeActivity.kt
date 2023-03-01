@@ -27,8 +27,6 @@ class WelcomeActivity : BaseActivity<BaseViewModel, ActivityWelcomeBinding>() {
 
     private lateinit var mViewPager: BannerViewPager<Int, WelcomeBannerViewHolder>
 
-    override fun layoutId() = R.layout.activity_welcome
-
     override fun initView(savedInstanceState: Bundle?) {
         BarUtils.setStatusBarLightMode(this, true)
         //防止出现按Home键回到桌面时，再次点击重新进入该界面bug

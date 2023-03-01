@@ -31,8 +31,6 @@ class MainFragment : BaseFragment<MainViewModel, FragmentMainBinding>() {
     //请求数据ViewModel
     private val requestMainViewModel: RequestMainViewModel by viewModels()
 
-    override fun layoutId() = R.layout.fragment_main
-
     override fun initView(savedInstanceState: Bundle?) {
         //初始化 toolbar
         toolbar.run {

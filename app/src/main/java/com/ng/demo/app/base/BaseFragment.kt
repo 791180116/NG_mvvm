@@ -14,13 +14,6 @@ import ng.crazy.jetpackmvvm.base.viewmodel.BaseViewModel
  * abstract class BaseFragment<VM : BaseViewModel> : BaseVmFragment<VM>() {
  */
 abstract class BaseFragment<VM : BaseViewModel, DB : ViewDataBinding> : BaseVmDbFragment<VM, DB>() {
-
-    /**
-     * 当前Fragment绑定的视图布局
-     */
-    abstract override fun layoutId(): Int
-
-
     abstract override fun initView(savedInstanceState: Bundle?)
 
     /**

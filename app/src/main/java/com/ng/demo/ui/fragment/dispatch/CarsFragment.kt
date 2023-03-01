@@ -18,7 +18,6 @@ class CarsFragment : BaseFragment<CarsViewModel, FragmentCarsBinding>() {
     private val carAdapter: CarAdapter by lazy { CarAdapter(arrayListOf()) }
     private val requestCarsViewModel: RequestCarsViewModel by viewModels()
 
-    override fun layoutId(): Int = R.layout.fragment_cars
 
     override fun initView(savedInstanceState: Bundle?) {
         swipeRefresh.isEnabled = false
